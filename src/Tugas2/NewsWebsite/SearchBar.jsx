@@ -43,7 +43,7 @@ const SearchBar = () =>  {
         if (search === "") {
                 setLoading(true);
                 axios.get(
-                    "http://newsapi.org/v2/top-headlines?country=us&apiKey=989548329dd94e968d3d9779c9310de3"
+                    "https://newsapi.org/v2/top-headlines?country=us&apiKey=989548329dd94e968d3d9779c9310de3"
                 )
                 .then((res) => {
                     setNews(res.data.articles)
